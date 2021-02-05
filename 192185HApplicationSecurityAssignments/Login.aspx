@@ -6,7 +6,7 @@
 <head runat="server">
     <title></title>
 
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfbjDsaAAAAAFa7qfslF584HTHVvKtinZcqE08P"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=SITEKEY"></script>
 
 </head>
 <body>
@@ -44,7 +44,7 @@
 
     <script>
         grecaptcha.ready(function () {
-            grecaptcha.execute('6LfbjDsaAAAAAFa7qfslF584HTHVvKtinZcqE08P', { action: 'Login' }).then(function (token) {
+            grecaptcha.execute('SITEKEY', { action: 'Login' }).then(function (token) {
                 document.getElementById("g-recaptcha-response").value = token;
             });
         });
