@@ -6,7 +6,7 @@
 <head runat="server">
     <title>Registration Form</title>
 
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfbjDsaAAAAAFa7qfslF584HTHVvKtinZcqE08P"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=SITEKEY"></script>
 
     <script type="text/javascript">
         function validate() {
@@ -113,7 +113,7 @@
 
     <script>
        grecaptcha.ready(function () {
-            grecaptcha.execute('6LfbjDsaAAAAAFa7qfslF584HTHVvKtinZcqE08P', { action: 'Registration' }).then(function (token) {
+            grecaptcha.execute('SITEKEY', { action: 'Registration' }).then(function (token) {
                 document.getElementById("g-recaptcha-response").value = token;
             });
         });
