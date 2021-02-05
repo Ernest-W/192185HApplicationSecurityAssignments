@@ -207,7 +207,7 @@ namespace _192185HApplicationSecurityAssignments
             bool result = true;
 
             string CaptchaResponse = Request.Form["g-recaptcha-response"];
-            HttpWebRequest Req = (HttpWebRequest)WebRequest.Create("https://www.google.com/recaptcha/api/siteverify?secret=SecretKey &response=" + CaptchaResponse);
+            HttpWebRequest Req = (HttpWebRequest)WebRequest.Create("https://www.google.com/recaptcha/api/siteverify?secret=SECRETKEY &response=" + CaptchaResponse);
 
             try
             {
